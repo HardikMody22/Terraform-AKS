@@ -1,0 +1,17 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: georgemichaeljbserver
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: georgemichaeljbserver
+    spec:
+      containers:
+        - image: "hardik2205/georgemichaeljbserver"
+          imagePullPolicy: Always
+          name: georgemichaeljbserver
+          ports:
+            - containerPort: 80
