@@ -1,6 +1,8 @@
 # Terraform-AKS
 Deploying from dockerhub to AKS using terraform
 
+## Kindly use the Raw Format
+
 ## Steps To Deploy
 ### 1. az login
 ### 2. az ad sp create-for-rbac -n "MyApp"
